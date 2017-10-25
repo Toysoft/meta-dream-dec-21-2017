@@ -2,13 +2,12 @@ Dreambox BSP layer for:
 ```
 dm500hd - kernel 3.2.94 driver 20140616 secondstage 84
 dm500hdv2 - kernel 3.2.94 driver 20140616 secondstage 89
-dm520 - kernel 3.4.113 driver 20170801 secondstage 3
+dm520 - kernel 3.4.113 driver 20171021 secondstage 3
 dm800 - kernel 2.6.18 driver 20131228a secondstage 84
 dm800se - kernel 3.2.94 driver 20151201 secondstage 84
 dm800sev2 - kernel 3.2.94 driver 20151201 secondstage 89
 dm820 - kernel 3.4.113 driver 20171004 secondstage 18
 dm900 - kernel 3.14.79 driver 20170801 secondstage N/A
-dm920 - Not yet ready!
 dm7020hd - kernel 3.2.94 driver 20161019 secondstage 89
 dm7020hdv2 - kernel 3.2.94 driver 20161019 secondstage 89
 dm7080 - kernel 3.4.113 driver 20170711 secondstage 14
@@ -29,4 +28,8 @@ git pull origin pyro
 ```
 each time you do "make update" for the OE.
 
+Experimental machines:
+```
+dm920 - Not yet ready!
+```
 We're independent so if you think you can help you're welcome to send us merge requests.
