@@ -3,7 +3,7 @@ SECTION = "base"
 LICENSE = "CLOSED"
 DEPENDS += "virtual/kernel"
 PRIORITY = "required"
-INC_PR = "r7"
+INC_PR = "r8"
 
 PRECOMPILED_ARCH = "${@bb.utils.contains('MACHINE', 'dm920', 'dm900', MACHINE, d)}"
 
@@ -97,8 +97,8 @@ do_install_append_dm920() {
 PACKAGES =+ "${PN}-lcd ${PN}-stb-core"
 
 RDEPENDS_${PN} = "dreambox-secondstage-${MACHINE} kernel-${DM_LOCALVERSION} ${PN}-stb-core"
-RDEPENDS_${PN}_dm900 = "kernel-${DM_LOCALVERSION} ${PN}-stb-core"
-RDEPENDS_${PN}_dm920 = "kernel-${DM_LOCALVERSION} ${PN}-stb-core"
+RDEPENDS_${PN}_dm900 = "kernel-3.14-1.17-dm900 ${PN}-stb-core"
+RDEPENDS_${PN}_dm920 = "kernel-3.14-1.17-dm920 ${PN}-stb-core"
 RDEPENDS_${PN}-lcd = "${PN}-stb-core"
 RRECOMMENDS_${PN} = "${PN}-lcd"
 
