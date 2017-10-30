@@ -10,4 +10,6 @@ SRC_URI[dm920.sha256sum] = "5309a3b5f7d356cb038767d7c4c1e19f3cac6f3ccce38581639f
 
 COMPATIBLE_MACHINE = "dm920"
 
+DM_LOCALVERSION ="3.14-1.17-dm920"
+
 MD5SUM = "${@d.getVarFlag('SRC_URI', 'dm920.md5sum', True)}"
